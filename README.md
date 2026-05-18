@@ -1,15 +1,36 @@
-# Lazar's dotfiles ✨💽
+# Mario dev workstation dotfiles
 
-This repository contains my ever-evolving dotfiles. Check them out! If you find something useful, feel free to add it to your own dotfiles.
+Linux-focused dotfiles for the Docker workstation used with the dev-containers setup.
 
-## Neovim Plugins
+## Active configs
 
-- [LazyVim](https://lazyvim.org) (base configuration)
-- [Cyberdream](https://github.com/scottmckendry/cyberdream.nvim) (colorscheme)
-- [Tokyonight Tmux](https://github.com/janoamaral/tokyo-night-tmux) (tmux theme integration)
-- [aserowy/tmux.nvim](https://github.com/aserowy/tmux.nvim) (tmux + neovim integration)
+These are linked by the workstation entrypoint when /workspace/projects/.dotfiles exists:
 
-## Requirements
+- .zshrc -> shell environment, prompt, aliases, small helpers
+- .config/nvim -> LazyVim-based Neovim config for Node.js and Next.js work
+- .config/tmux -> tmux terminal/session config
+- .config/lazygit -> lazygit theme/config
 
-- [A Nerd Font](https://www.nerdfonts.com/font-downloads) (it's for the icons)
-- [kitty](https://sw.kovidgoyal.net/kitty/) (a fast GPU based terminal emulator)
+## Neovim
+
+The Neovim setup is a clean LazyVim starter, not the original upstream config. It uses current LazyVim defaults, including Snacks picker/explorer, plus web-focused extras:
+
+- TypeScript/TSX
+- Tailwind
+- JSON/YAML/Markdown
+- Docker
+- Prisma
+- ESLint
+- Prettier
+
+Hidden files are shown by default in Snacks picker, explorer, and grep. .git directories are excluded.
+
+## tmux
+
+The tmux config enables truecolor, mouse support, useful window/pane indexing, current-path splits, and a workstation statusline.
+
+TPM plugins are installed under ~/.tmux/plugins, not inside this Git repo.
+
+## Origin
+
+This branch started from Lazar Nikolov dotfiles, but it has been trimmed for a Linux Docker workstation. macOS, GUI-terminal, Zed, Kitty, btop, Neo-tree, Telescope, and unused language-specific pieces were removed.
