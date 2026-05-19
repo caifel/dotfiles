@@ -5,8 +5,7 @@ export EDITOR="nvim"
 export VISUAL="nvim"
 
 export PNPM_HOME="$HOME/.local/share/pnpm"
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$HOME/.local/bin:$HOME/bin:$PNPM_HOME:$BUN_INSTALL/bin:$HOME/go/bin:$PATH"
+export PATH="$HOME/.local/bin:$HOME/bin:$PNPM_HOME:$PATH"
 
 alias vim="nvim"
 alias vi="nvim"
@@ -33,5 +32,4 @@ kill_port() {
   lsof -ti:"$1" | xargs -r kill
 }
 
-[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 [ -f "$HOME/.zshrc.local" ] && source "$HOME/.zshrc.local"
