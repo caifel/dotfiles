@@ -2,23 +2,11 @@ return {
   {
     "nvim-treesitter/nvim-treesitter",
     opts = function(_, opts)
-      opts.ensure_installed = {
-        "bash",
+      vim.list_extend(opts.ensure_installed, {
         "css",
         "dockerfile",
-        "html",
-        "javascript",
-        "json",
         "json5",
-        "lua",
-        "markdown",
-        "markdown_inline",
-        "tsx",
-        "typescript",
-        "vim",
-        "vimdoc",
-        "yaml",
-      }
+      })
     end,
   },
 }

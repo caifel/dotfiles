@@ -1,3 +1,17 @@
+local exclude = {
+  ".git",
+  "node_modules",
+  ".next",
+  "dist",
+  "build",
+  "coverage",
+  ".pnpm-store",
+  "pnpm-store",
+  ".pnpm",
+  "pnpm-lock.yaml",
+  ".turbo",
+}
+
 return {
   {
     "folke/snacks.nvim",
@@ -7,17 +21,17 @@ return {
           files = {
             hidden = true,
             ignored = false,
-            exclude = { ".git" },
+            exclude = exclude,
           },
           explorer = {
             hidden = true,
             ignored = false,
-            exclude = { ".git" },
+            exclude = exclude,
           },
           grep = {
             hidden = true,
             ignored = false,
-            exclude = { ".git" },
+            exclude = exclude,
           },
         },
       },
