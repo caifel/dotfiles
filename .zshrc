@@ -36,3 +36,7 @@ kill_port() {
 }
 
 [ -f "$HOME/.zshrc.local" ] && source "$HOME/.zshrc.local"
+
+
+# Added by Antigravity CLI installer
+export PATH="/home/mario/.local/bin:$PATH"
