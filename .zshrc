@@ -13,6 +13,7 @@ export PATH="$HOME/.local/bin:$HOME/bin:$PNPM_HOME:$PATH"
 alias vim="nvim"
 alias vi="nvim"
 alias ll="ls -la"
+alias ws="~/.config/tmux/dev-session.sh"
 
 autoload -Uz vcs_info
 zstyle ":vcs_info:git:*" formats " %F{8}(%b)%f"
