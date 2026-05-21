@@ -24,7 +24,7 @@ tmux new-session -d -s "$SESSION_NAME" -n app -c "$APP_DIR" "$SHELL_BIN"
 tmux new-window -t "$SESSION_NAME:" -n agy -c "$APP_DIR" "$SHELL_BIN"
 tmux new-window -t "$SESSION_NAME:" -n htop -c "$PROJECTS_DIR" "htop; exec $SHELL_BIN"
 tmux new-window -t "$SESSION_NAME:" -n dotfiles -c "$DOTFILES_DIR" "$SHELL_BIN"
-tmux new-window -t "$SESSION_NAME:" -n node -c "$APP_DIR" "$SHELL_BIN"
+tmux new-window -t "$SESSION_NAME:" -n runtime -c "$APP_DIR" "$SHELL_BIN"
 tmux new-window -t "$SESSION_NAME:" -n helper -c "$APP_DIR" "$SHELL_BIN"
 
 tmux select-window -t "$SESSION_NAME:app"

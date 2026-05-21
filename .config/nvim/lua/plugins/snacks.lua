@@ -8,7 +8,6 @@ local exclude = {
   ".pnpm-store",
   "pnpm-store",
   ".pnpm",
-  "pnpm-lock.yaml",
   ".turbo",
 }
 

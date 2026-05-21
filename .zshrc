@@ -7,8 +7,8 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export EDITOR="nvim"
 export VISUAL="nvim"
 
-export PNPM_HOME="$HOME/.local/share/pnpm"
-export PATH="$HOME/.local/bin:$HOME/bin:$PNPM_HOME:$PATH"
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$HOME/.local/bin:$HOME/bin:$PATH"
 
 alias vim="nvim"
 alias vi="nvim"

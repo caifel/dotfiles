@@ -7,7 +7,7 @@ Linux-focused dotfiles for the Docker workstation used with the dev-containers s
 These are linked by the workstation entrypoint when /workspace/projects/.dotfiles exists:
 
 - .zshrc -> shell environment, prompt, aliases, small helpers
-- .config/nvim -> LazyVim-based Neovim config for Node.js and Next.js work
+- .config/nvim -> LazyVim-based Neovim config for Bun, Elysia, Drizzle, and Next.js work
 - .config/tmux -> tmux terminal/session config
 - .config/lazygit -> lazygit theme/config
 
@@ -19,7 +19,7 @@ The Neovim setup is a clean LazyVim starter, not the original upstream config. I
 - Tailwind
 - JSON/YAML/Markdown
 - Docker
-- Prisma
+- Elysia/Drizzle-ready TypeScript work
 - ESLint
 - Prettier
 
