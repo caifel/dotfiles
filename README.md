@@ -1,10 +1,10 @@
-# Mario dev workstation dotfiles
+# Mario dev ws dotfiles
 
-Linux-focused dotfiles for the Docker workstation used with the dev-containers setup.
+Linux-focused dotfiles for the Docker `ws` service used with the dev-containers setup.
 
 ## Active configs
 
-These are linked by the workstation entrypoint when /workspace/projects/.dotfiles exists:
+These are linked by the `ws` entrypoint when /workspace/projects/.dotfiles exists:
 
 - .zshrc -> shell environment, prompt, aliases, small helpers
 - .config/nvim -> LazyVim-based Neovim config for Bun, Elysia, Drizzle, and Next.js work
@@ -27,10 +27,10 @@ Hidden files are shown by default in Snacks picker, explorer, and grep. .git dir
 
 ## tmux
 
-The tmux config enables truecolor, mouse support, useful window/pane indexing, current-path splits, and a workstation statusline.
+The tmux config enables truecolor, mouse support, useful window/pane indexing, current-path splits, and a `ws` statusline. The `ws` helper opens web, API, database, dotfiles, and utility windows.
 
 TPM plugins are installed under ~/.tmux/plugins, not inside this Git repo.
 
 ## Origin
 
-This branch started from Lazar Nikolov dotfiles, but it has been trimmed for a Linux Docker workstation. macOS, GUI-terminal, Zed, Kitty, btop, Neo-tree, Telescope, and unused language-specific pieces were removed.
+This branch started from Lazar Nikolov dotfiles, but it has been trimmed for a Linux Docker `ws` service. macOS, GUI-terminal, Zed, Kitty, btop, Neo-tree, Telescope, and unused language-specific pieces were removed.

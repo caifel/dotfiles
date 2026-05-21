@@ -14,13 +14,15 @@ alias vim="nvim"
 alias vi="nvim"
 alias ll="ls -la"
 alias ws="~/.config/tmux/dev-session.sh"
+alias db="sqlite3"
+alias dc="docker compose"
 
 autoload -Uz vcs_info
 zstyle ":vcs_info:git:*" formats " %F{8}(%b)%f"
 zstyle ":vcs_info:git:*" actionformats " %F{8}(%b|%a)%f"
 precmd() { vcs_info }
 setopt prompt_subst
-PROMPT="%F{6}mario@workstation%f %F{4}%~%f\${vcs_info_msg_0_} %# "
+PROMPT="%F{6}mario@ws%f %F{4}%~%f\${vcs_info_msg_0_} %# "
 
 kill_port() {
   if [ -z "${1:-}" ]; then
